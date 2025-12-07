@@ -12,13 +12,13 @@
 </head>
 <body>
 <h1>Motion graphics</h1>
-<div class="portfolio_video" id="portfolio_video"></div>
+<div class="portfolio" id="portfolio"></div>
 
 <!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
-  const portfolioContainer = document.getElementById('portfolio_video');
+  const portfolioContainer = document.getElementById('portfolio');
 
   fetch('portfolio_video.json')
     .then(res => res.json())
@@ -27,7 +27,7 @@
         const link = document.createElement('a');
         link.href = item.full;
         link.className = 'glightbox';
-        link.setAttribute('data-gallery', 'portfolio_video');
+        link.setAttribute('data-gallery', 'portfolio');
 
         const img = document.createElement('img');
         img.src = item.thumb;
