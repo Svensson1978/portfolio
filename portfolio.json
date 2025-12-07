@@ -1,0 +1,43 @@
+[
+  {
+    "thumb": "images/product/01pr_teknoVW1.jpg",
+    "full": "images/product/01pr_teknoVW1.jpg",
+    "alt": "Produkt 1"
+  },
+  {
+    "thumb": "images/product/02pr_gjspatel.jpg",
+    "full": "images/product/02pr_gjspatel.jpg",
+    "alt": "Produkt 2"
+  },
+  {
+    "thumb": "images/product/03pr_fabuland_lot01.jpg",
+    "full": "images/product/03pr_fabuland_lot01.jpg",
+    "alt": "Produkt 3"
+  },
+  {
+    "thumb": "images/product/hvidvin.jpg",
+    "full": "images/product/hvidvin.jpg",
+    "alt": "Produkt 1"
+  },
+  {
+    "thumb": "images/product/redwine.jpg",
+    "full": "images/product/redwine.jpg",
+    "alt": "Produkt 2"
+  },
+  {
+    "thumb": "images/product/port_white.jpg",
+    "full": "images/product/port_white.jpg",
+    "alt": "Produkt 3"
+  },
+  {
+    "thumb": "images/product/port_nightclub.jpg",
+    "full": "images/product/port_nightclub.jpg",
+    "alt": "Produkt 1"
+  },
+  {
+    "thumb": "images/product/port_mellow.jpg",
+    "full": "images/product/port_mellow.jpg",
+    "alt": "Produkt 2"
+  }
+
+]

@@ -1,0 +1,36 @@
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #000000;
+    }
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;     /* maks bredde for hele griddet */
+  margin: 0 auto;         /* centrer griddet horisontalt */
+}
+
+.portfolio a {
+  display: block;
+  overflow: hidden;
+  /* border-radius: 8px; */
+  position: relative;
+  aspect-ratio: 1 / 1;       /* ens højde */
+}
+
+.portfolio img {
+  width: 115%;                /* lidt bredere end boksen */
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-8%); /* start lidt til venstre */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio img:hover {
+  transform: translateX(0);   /* glider ind til korrekt position */
+  opacity: 0.7;
+}
+

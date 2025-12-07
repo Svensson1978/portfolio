@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+         <!-- GLightbox CSS -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>dette er en test</h1>
+<h1>Min Produktportfolio</h1>
+<div class="portfolio" id="portfolio"></div>
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+  const portfolioContainer = document.getElementById('portfolio');
+
+  fetch('portfolio.json')
+    .then(res => res.json())
+    .then(data => {
+      data.forEach(item => {
+        const link = document.createElement('a');
+        link.href = item.full;
+        link.className = 'glightbox';
+        link.setAttribute('data-gallery', 'portfolio');
+
+        const img = document.createElement('img');
+        img.src = item.thumb;
+        img.alt = item.alt;
+
+        link.appendChild(img);
+        portfolioContainer.appendChild(link);
+      });
+
+      // Initialiser GLightbox efter alle billeder er tilføjet
+      const lightbox = GLightbox({ selector: '.glightbox' });
+    });
+</script>
 </body>
 </html>
